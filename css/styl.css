@@ -1,0 +1,30 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    animation: move-box 4s linear infinite;
+}
+
+@keyframes move-box {
+    0% {
+        transform: translate(0, 0);
+        background-color: yellow;
+    }
+    25% {
+        transform: translateX(200px);
+        background-color: blue;
+    }
+    50% {
+        transform: translate(200px, 200px);
+        background-color: red;
+    }
+    75% {
+        transform: translateY(200px);
+        background-color: green;
+    }
+    100% {
+        transform: translate(0, 0);
+        background-color: yellow;
+    }
+}
